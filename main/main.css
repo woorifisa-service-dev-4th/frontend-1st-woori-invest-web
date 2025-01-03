@@ -1,3 +1,429 @@
+/* ==============================
+   fonts (글꼴)
+============================== */
+@import url("https://static.toss.im/tps/main.css");
+@import url("https://static.toss.im/tps/others.css");
+
+/* 애니메이션 효과 */
+@keyframes slide-exchange {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* 차트 애니메이션 효과 (1급차 순위 변경)*/
+@keyframes slide-chart-up {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* 차트 애니메이션 효과(1급차 순위 변경) */
+@keyframes slide-chart-down {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* 차트 애니메이션 효과(2급차 순위 변경) */
+@keyframes slide-chart-double-up {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* 차트 애니메이션 효과(2급차 순위 변경) */
+@keyframes slide-chart-double-down {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/* 기본 설정 */
+body {
+  font-family: "Toss Product Sans";
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafc;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* 메뉴 섹션 */
+.menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.menu-item {
+  display: flex;
+  font-weight: bold;
+  font-size: 19px;
+  cursor: pointer;
+  padding: 5px 10px;
+  gap: 10px;
+  color: #8b95a1;
+}
+
+.menu-item.active {
+  font-weight: bold;
+  border-bottom: 3px solid #000;
+  color: #000;
+  font-size: 20px;
+}
+
+.sub-menu {
+  display: flex;
+  gap: 5px;
+  margin-top: 6px;
+  margin-left: auto;
+  font-size: 10px;
+  color: #4e5968;
+}
+
+.sub-menu div:first-child {
+  font-size: 7px;
+}
+
+/* 필터 섹션 */
+.filter {
+  display: flex;
+  gap: 10px;
+  margin: 20px;
+}
+
+.filter-btn {
+  padding: 0px 14px;
+  font-size: 14px;
+  border: none;
+  border-radius: 25px;
+  background-color: #f9fafc;
+  color: #000c1ecc;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  font-weight: bold;
+  background-color: #f5f5f5;
+}
+
+/* 환율 및 달러 인덱스 컨테이너 */
+.exchange-rate-container {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  margin-left: auto;
+  width: 200px;
+  border-radius: 8px;
+  background-color: #f9fafc;
+}
+
+/* 환율 슬라이드 애니메이션 */
+.exchange-rate {
+  display: flex;
+  flex-direction: column;
+  animation: slide-exchange 4s infinite ease-in-out;
+}
+
+.rate-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  font-size: 14px;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.rate-item span {
+  font-weight: 500;
+  color: #555;
+}
+
+.rate-item strong {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.rate-item .rate-change {
+  font-size: 12px;
+}
+
+.rate-change.positive {
+  color: #d32f2f;
+}
+
+.rate-change.negative {
+  color: #1976d2;
+}
+
+/* 시장 요약 섹션 */
+.market-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin: 20px;
+}
+
+.market-card {
+  background-color: #f2f4f6;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.market-card h3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.market-card .price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.market-card .change {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* 실시간 차트 섹션 */
+.live-chart {
+  margin: 40px 20px;
+}
+
+.live-chart h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.live-chart h2 span {
+  font-size: 12px;
+  color: #6b7684;
+  font-weight: 100;
+}
+
+.chart-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.chart-btn {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 14px;
+  color: #000c1ecc;
+  background-color: #f9fafc;
+  cursor: pointer;
+}
+
+.chart-btn.active {
+  font-weight: bold;
+  background-color: #f5f5f5;
+}
+
+.chart-table {
+  overflow-x: auto;
+}
+
+.chart-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.chart-table th,
+.chart-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.chart-table th {
+  background-color: #f9fafc;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.chart-table tbody tr {
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+.chart-rate-up {
+  animation: slide-chart-up 4s infinite ease-in-out;
+}
+
+.chart-rate-down {
+  animation: slide-chart-down 4s infinite ease-in-out;
+}
+
+.chart-rate-double-up {
+  animation: slide-chart-double-up 4s infinite ease-in-out;
+}
+
+.chart-rate-double-down {
+  animation: slide-chart-double-down 4s infinite ease-in-out;
+}
+
+.chart-table tbody tr:hover {
+  background-color: #f5f7fa;
+}
+
+.chart-table td {
+  font-size: 13px;
+}
+
+.chart-table td:first-child {
+  font-weight: bold;
+  color: #3182f6;
+}
+
+.positive {
+  color: #d32f2f;
+}
+
+.negative {
+  color: #1976d2;
+}
+
+.on {
+  color: #4caf50;
+}
+
+.off {
+  color: #bbb4b4;
+}
+
+/* 푸터 스타일 */
+.footer {
+  background-color: #f9fafc;
+  color: #777;
+  font-size: 12px;
+  text-align: center;
+  padding: 20px 10px;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 40px;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.footer-links a {
+  color: #777;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-links span {
+  color: #ccc;
+}
+
+.footer-info p {
+  margin: 5px 0;
+  line-height: 1.4;
+}
+
+.news {
+  margin: 40px 20px;
+}
+
+.news-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.news-header h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.news-more {
+  font-size: 14px;
+  color: #007aff;
+  text-decoration: none;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.news-item {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-item img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.news-item p {
+  font-size: 14px;
+  margin: 10px;
+  font-weight: 500;
+}
+
+.news-item span {
+  font-size: 12px;
+  color: #888;
+  margin: 0 10px 10px;
+  display: block;
+}
 .hy-nav-container {
   display: flex;
 }
