@@ -1,1 +1,273 @@
-.
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>주식 시장 대시보드</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- 메뉴 섹션 -->
+    <div class="menu">
+      <div class="menu-item active"><strong>전체</strong></div>
+      <div class="menu-item">
+        국내
+        <div class="sub-menu">
+          <div class="sub-menu-item on">●</div>
+          <div class="sub-menu-item">정규장</div>
+        </div>
+      </div>
+      <div class="menu-item">
+        해외
+        <div class="sub-menu">
+          <div class="sub-menu-item off">●</div>
+          <div class="sub-menu-item">해외장</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 필터 섹션 -->
+    <div class="filter">
+      <button class="filter-btn active">주가지수</button>
+      <button class="filter-btn">채권</button>
+      <button class="filter-btn">원자재</button>
+      <div class="exchange-rate-container">
+        <div class="exchange-rate">
+          <div class="rate-item">
+            <span>달러 인덱스</span>
+            <strong>102.45</strong>
+            <span class="rate-change positive">+0.15%</span>
+          </div>
+          <div class="rate-item">
+            <span>달러 환율</span>
+            <strong>1,475.27</strong>
+            <span class="rate-change positive">+0.35%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 시장 요약 섹션 -->
+    <section class="market-summary">
+      <div class="market-card">
+        <h3>
+          나스닥
+          <img
+            alt="미국 국기"
+            loading="lazy"
+            width="14"
+            height="14"
+            decoding="async"
+            src="https://thumb.tossinvest.com/image/resized/32x0/https%3A%2F%2Fstatic.toss.im%2Ficons%2Fpng%2F4x%2Ficon-flag-us.png"
+          />
+        </h3>
+        <p class="price">19,397.34</p>
+        <p class="change positive">+86.55 (0.4%)</p>
+      </div>
+      <div class="market-card">
+        <h3>
+          S&P 500
+          <img
+            alt="미국 국기"
+            loading="lazy"
+            width="14"
+            height="14"
+            decoding="async"
+            src="https://thumb.tossinvest.com/image/resized/32x0/https%3A%2F%2Fstatic.toss.im%2Ficons%2Fpng%2F4x%2Ficon-flag-us.png"
+          />
+        </h3>
+
+        <p class="price">5,905.57</p>
+        <p class="change positive">+23.94 (0.4%)</p>
+      </div>
+      <div class="market-card">
+        <h3>
+          VIX
+          <img
+            alt="미국 국기"
+            loading="lazy"
+            width="14"
+            height="14"
+            decoding="async"
+            src="https://thumb.tossinvest.com/image/resized/32x0/https%3A%2F%2Fstatic.toss.im%2Ficons%2Fpng%2F4x%2Ficon-flag-us.png"
+          />
+        </h3>
+        <p class="price">17.13</p>
+        <p class="change negative">-0.22 (1.2%)</p>
+      </div>
+      <div class="market-card">
+        <h3>
+          코스피
+          <img
+            alt="한국 국기"
+            loading="lazy"
+            width="14"
+            height="14"
+            decoding="async"
+            src="https://thumb.tossinvest.com/image/resized/32x0/https%3A%2F%2Fstatic.toss.im%2Ficons%2Fpng%2F4x%2Ficon-flag-kr.png"
+          />
+        </h3>
+        <p class="price">2,398.94</p>
+        <p class="change negative">-0.55 (0.02%)</p>
+      </div>
+    </section>
+
+    <!-- 주요 뉴스 섹션 -->
+    <section class="news">
+      <div class="news-header">
+        <h2>주요 뉴스</h2>
+        <a href="#" class="news-more">더 보기</a>
+      </div>
+      <div class="news-grid">
+        <div class="news-item">
+          <img
+            alt="뉴스 이미지 1"
+            src="https://static.tossinvestcdn.com/assets/image/detail-news-default/image20.png"
+            style="transform: none"
+            loading="lazy"
+            decoding="async"
+          />
+          <p>테슬라, 사이버트럭 풀발+머리콜에도 개장 전 '상승'</p>
+          <span>2시간 전 · 이데일리</span>
+        </div>
+        <div class="news-item">
+          <img
+            alt="뉴스 이미지 2"
+            src="https://static.tossinvestcdn.com/assets/image/detail-news-default/image9.png"
+            style="transform: none"
+            loading="lazy"
+            decoding="async"
+          />
+          <p>美 신규 실업수당 청구, 8개월 만에 최저</p>
+          <span>1시간 전 · 한국경제</span>
+        </div>
+        <div class="news-item">
+          <img
+            alt="뉴스 이미지 3"
+            src="https://static.tossinvestcdn.com/assets/image/detail-news-default/image12.png"
+            style="transform: none"
+            loading="lazy"
+            decoding="async"
+          />
+          <p>테슬라 작년 179만대 팔아...기대 이하 실적에 주가 4%대↓</p>
+          <span>1시간 전 · 연합뉴스</span>
+        </div>
+        <div class="news-item">
+          <img
+            alt="뉴스 이미지 4"
+            src="https://static.tossinvestcdn.com/assets/image/detail-news-default/image20.png"
+            style="transform: none"
+            loading="lazy"
+            decoding="async"
+          />
+          <p>우크라 통한 러 가스공급 중단에 유럽 가스값 상승세</p>
+          <span>1시간 전 · 연합뉴스</span>
+        </div>
+      </div>
+    </section>
+    <!-- 실시간 차트 섹션 -->
+    <section class="live-chart">
+      <h2>실시간 차트 <span>오늘 01:24 기준</span></h2>
+      <div class="chart-filters">
+        <button class="chart-btn active">실시간</button>
+        <button class="chart-btn">1일</button>
+        <button class="chart-btn">1주일</button>
+        <button class="chart-btn">1개월</button>
+      </div>
+      <div class="chart-table">
+        <table>
+          <thead>
+            <tr>
+              <th>순위</th>
+              <th>종목</th>
+              <th>현재가</th>
+              <th>등락률</th>
+              <th>거래대금 많은 순</th>
+              <th>거래량</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="negative">★</td>
+              <td>리게티 컴퓨팅</td>
+              <td>25,548원</td>
+              <td class="positive">+3,116원 (13.8%)</td>
+              <td>45억 원</td>
+              <td>178,798주</td>
+            </tr>
+            <tr class="chart-rate-down">
+              <td class="negative">★</td>
+              <td>실SQ</td>
+              <td>12,156원</td>
+              <td class="positive">+3,116원 (34.4%)</td>
+              <td>44억 원</td>
+              <td>370,429주</td>
+            </tr>
+            <tr class="chart-rate-up">
+              <td class="negative">★</td>
+              <td>패러데이 퓨처</td>
+              <td>4,909원</td>
+              <td class="positive">+1,337원 (37.4%)</td>
+              <td>25억 원</td>
+              <td>523,005주</td>
+            </tr>
+            <tr class="chart-rate-double-down">
+              <td class="negative">★</td>
+              <td>TSLL</td>
+              <td>36,103원</td>
+              <td class="negative">-4,366원 (10.7%)</td>
+              <td>24억 원</td>
+              <td>69,344주</td>
+            </tr>
+            <tr>
+              <td class="negative">★</td>
+              <td>테슬라</td>
+              <td>561,598원</td>
+              <td class="negative">-32,046원 (5.3%)</td>
+              <td>11억 원</td>
+              <td>2,060주</td>
+            </tr>
+            <tr class="chart-rate-double-up">
+              <td class="negative">★</td>
+              <td>엔비디아</td>
+              <td>761,598원</td>
+              <td class="negative">-43,146원 (6.3%)</td>
+              <td>16억 원</td>
+              <td>2,760주</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- 푸터 섹션 -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#">개인정보 처리방침</a>
+        <span>|</span>
+        <a href="#">고객센터 1599-0000</a>
+        <span>|</span>
+        <a href="#">공지사항</a>
+        <span>|</span>
+        <a href="#">자주 묻는 질문</a>
+        <span>|</span>
+        <a href="#">투자 유의사항</a>
+        <span>|</span>
+        <a href="#">이용자권리 및 유의사항</a>
+        <span>|</span>
+        <a href="#">신용정보 활용체제</a>
+        <span>|</span>
+        <a href="#">우리증권(주)</a>
+      </div>
+      <div class="footer-info">
+        <p>
+          사업자 등록번호 : 519-87-01431 대표 : 김** 주소 : 06133 서울특별시
+          마포구 월드컵북로 60길 17 우리금융상암센터 3층 IT 교육센터
+        </p>
+        <p>
+          우리증권에서 제공하는 투자 정보는 고객의 투자 판단을 위한 단순
+          참고용일 뿐, 투자 제안 및 권유, 종목 추천을 위해 작성된 것이 아닙니다.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
