@@ -7,34 +7,43 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="iv-container">
       <!-- 상단 정보 -->
-      <header class="header">
-        <div class="header-container">
-          <div class="flag-icon-container">
+      <header class="iv-header">
+        <div class="iv-header-container">
+          <div class="iv-flag-icon-container">
             <img
               src="https://static.toss.im/icons/png/4x/icon-flag-kr.png"
               alt="국기"
-              class="flag-icon"
+              class="iv-flag-icon"
             />
           </div>
-          <div class="header-info">
-            <h1 class="header-title">코스피 2,446.41</h1>
-            <p class="change">
-              전일 대비 <span class="up">+47.47 (1.9%)</span> | 실시간
+          <div class="iv-header-info">
+            <h1 class="iv-header-title">코스피 2,446.41</h1>
+            <p class="iv-change">
+              전일 대비 <span class="iv-up">+47.47 (1.9%)</span> | 실시간
             </p>
           </div>
         </div>
       </header>
 
       <!-- 메인 컨텐츠 -->
-      <div class="main-content">
+      <div class="iv-main-content">
         <!-- 차트 -->
-        <div class="chart-box">
-          <div class="chart-title">차트</div>
-          <svg viewBox="0 0 800 400" class="chart-svg">
+        <div class="iv-chart-box">
+          <div class="iv-chart-title-container">
+            <div class="iv-chart-title">📊 차트</div>
+            <div class="iv-chart-period">
+              <button class="iv-period-button">1일</button>
+              <button class="iv-period-button">1주일</button>
+              <button class="iv-period-button">3개월</button>
+              <button class="iv-period-button active">1년</button>
+              <button class="iv-period-button">5년</button>
+            </div>
+          </div>
+          <svg viewBox="0 0 720 500" class="iv-chart-svg">
             <!-- Y축 -->
-            <g class="y-axis">
+            <g class="iv-y-axis">
               <text x="30" y="20">2,700.00</text>
               <text x="30" y="50">2,675.00</text>
               <text x="30" y="80">2,650.00</text>
@@ -52,7 +61,7 @@
               <text x="30" y="440">2,350.00</text>
             </g>
             <!-- X축 -->
-            <g class="x-axis">
+            <g class="iv-x-axis">
               <text x="70" y="470">1월</text>
               <text x="170" y="470">3월</text>
               <text x="270" y="470">5월</text>
@@ -66,15 +75,15 @@
               fill="none"
               stroke="#ff4d4f"
               stroke-width="3"
-              points="120,400 170,300 270,220 370,270 470,200 570,300 670,350"
+              points="120,400 170,250 270,350 370,100 470,300 570,350 670,50"
             ></polyline>
           </svg>
         </div>
 
         <!-- 우측 정보 박스 -->
-        <aside class="info-box">
+        <aside class="iv-info-box">
           <!-- 상세 정보 -->
-          <section class="info">
+          <section class="iv-info">
             <h4>상세 정보</h4>
             <ul style="padding-left: 7px; padding-right: 8px">
               <li>시작: <span>2,402.58</span></li>
@@ -85,17 +94,17 @@
           </section>
 
           <!-- 투자자별 거래 현황 -->
-          <section class="investors">
+          <section class="iv-investors">
             <h4>투자자별 거래 현황</h4>
             <ul style="padding-left: 7px; padding-right: 8px">
-              <li>개인: <span class="down">-2,902억 원</span></li>
-              <li>외국인: <span class="up">+1,946억 원</span></li>
-              <li>기관: <span class="up">+784억 원</span></li>
+              <li>개인: <span class="iv-down">-2,902억 원</span></li>
+              <li>외국인: <span class="iv-up">+1,946억 원</span></li>
+              <li>기관: <span class="iv-up">+784억 원</span></li>
             </ul>
           </section>
 
           <!-- 주요 지수 -->
-          <section class="indices" style="margin-bottom: 0">
+          <section class="iv-indices" style="margin-bottom: 0">
             <h4>주요지수</h4>
             <ul style="padding-left: 7px; padding-right: 8px">
               <li>
@@ -103,45 +112,45 @@
                   src="https://static.toss.im/icons/png/4x/icon-flag-kr.png"
                   alt="국기"
                 />
-                <span class="label">코스피</span>
-                <span class="value">2,440.27</span>
-                <span class="up">+1.7%</span>
+                <span class="iv-label">코스피</span>
+                <span class="iv-value">2,440.27</span>
+                <span class="iv-up">+1.7%</span>
               </li>
               <li>
                 <img
                   src="https://static.toss.im/icons/png/4x/icon-flag-kr.png"
                   alt="국기"
                 />
-                <span class="label">코스닥</span>
-                <span class="value">697.64</span>
-                <span class="up">+1.6%</span>
+                <span class="iv-label">코스닥</span>
+                <span class="iv-value">697.64</span>
+                <span class="iv-up">+1.6%</span>
               </li>
               <li>
                 <img
                   src="https://static.toss.im/icons/png/4x/icon-flag-us.png"
                   alt="미국 국기"
                 />
-                <span class="label">나스닥</span>
-                <span class="value">19,280.79</span>
-                <span class="down">-0.1%</span>
+                <span class="iv-label">나스닥</span>
+                <span class="iv-value">19,280.79</span>
+                <span class="iv-down">-0.1%</span>
               </li>
               <li>
                 <img
                   src="https://static.toss.im/icons/png/4x/icon-flag-us.png"
                   alt="미국 국기"
                 />
-                <span class="label">S&P 500</span>
-                <span class="value">5,868.55</span>
-                <span class="down">-0.2%</span>
+                <span class="iv-label">S&P 500</span>
+                <span class="iv-value">5,868.55</span>
+                <span class="iv-down">-0.2%</span>
               </li>
               <li>
                 <img
                   src="https://thumb.tossinvest.com/image/resized/32x0/https%3A%2F%2Fstatic.toss.im%2Ficons%2Fpng%2F4x%2Ficon-arrow-up-down.png"
                   alt="VIX"
                 />
-                <span class="label">VIX</span>
-                <span class="value">17.93</span>
-                <span class="up">+3.3%</span>
+                <span class="iv-label">VIX</span>
+                <span class="iv-value">17.93</span>
+                <span class="iv-up">+3.3%</span>
               </li>
             </ul>
           </section>
