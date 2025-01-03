@@ -78,6 +78,11 @@ body {
   color: #000;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 /* 메뉴 섹션 */
 .menu {
   display: flex;
