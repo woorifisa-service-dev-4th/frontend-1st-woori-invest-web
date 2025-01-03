@@ -1,1 +1,152 @@
-.
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>코스피 차트</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- 상단 정보 -->
+      <header class="header">
+        <div class="header-container">
+          <div class="flag-icon-container">
+            <img
+              src="https://static.toss.im/icons/png/4x/icon-flag-kr.png"
+              alt="국기"
+              class="flag-icon"
+            />
+          </div>
+          <div class="header-info">
+            <h1 class="header-title">코스피 2,446.41</h1>
+            <p class="change">
+              전일 대비 <span class="up">+47.47 (1.9%)</span> | 실시간
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <!-- 메인 컨텐츠 -->
+      <div class="main-content">
+        <!-- 차트 -->
+        <div class="chart-box">
+          <div class="chart-title">차트</div>
+          <svg viewBox="0 0 800 400" class="chart-svg">
+            <!-- Y축 -->
+            <g class="y-axis">
+              <text x="30" y="20">2,700.00</text>
+              <text x="30" y="50">2,675.00</text>
+              <text x="30" y="80">2,650.00</text>
+              <text x="30" y="110">2,625.00</text>
+              <text x="30" y="140">2,600.00</text>
+              <text x="30" y="170">2,575.00</text>
+              <text x="30" y="200">2,550.00</text>
+              <text x="30" y="230">2,525.00</text>
+              <text x="30" y="260">2,500.00</text>
+              <text x="30" y="290">2,475.00</text>
+              <text x="30" y="320">2,450.00</text>
+              <text x="30" y="350">2,425.00</text>
+              <text x="30" y="380">2,400.00</text>
+              <text x="30" y="410">2,375.00</text>
+              <text x="30" y="440">2,350.00</text>
+            </g>
+            <!-- X축 -->
+            <g class="x-axis">
+              <text x="70" y="470">1월</text>
+              <text x="170" y="470">3월</text>
+              <text x="270" y="470">5월</text>
+              <text x="370" y="470">7월</text>
+              <text x="470" y="470">9월</text>
+              <text x="570" y="470">11월</text>
+              <text x="670" y="470">2025</text>
+            </g>
+            <!-- 차트 라인 -->
+            <polyline
+              fill="none"
+              stroke="#ff4d4f"
+              stroke-width="3"
+              points="120,400 170,300 270,220 370,270 470,200 570,300 670,350"
+            ></polyline>
+          </svg>
+        </div>
+
+        <!-- 우측 정보 박스 -->
+        <aside class="info-box">
+          <!-- 상세 정보 -->
+          <section class="info">
+            <h4>상세 정보</h4>
+            <ul style="padding-left: 7px; padding-right: 8px">
+              <li>시작: <span>2,402.58</span></li>
+              <li>거래량: <span>1억 5,994만</span></li>
+              <li>최고: <span>2,442.25</span></li>
+              <li>최저: <span>2,402.58</span></li>
+            </ul>
+          </section>
+
+          <!-- 투자자별 거래 현황 -->
+          <section class="investors">
+            <h4>투자자별 거래 현황</h4>
+            <ul style="padding-left: 7px; padding-right: 8px">
+              <li>개인: <span class="down">-2,902억 원</span></li>
+              <li>외국인: <span class="up">+1,946억 원</span></li>
+              <li>기관: <span class="up">+784억 원</span></li>
+            </ul>
+          </section>
+
+          <!-- 주요 지수 -->
+          <section class="indices" style="margin-bottom: 0">
+            <h4>주요지수</h4>
+            <ul style="padding-left: 7px; padding-right: 8px">
+              <li>
+                <img
+                  src="https://static.toss.im/icons/png/4x/icon-flag-kr.png"
+                  alt="국기"
+                />
+                <span class="label">코스피</span>
+                <span class="value">2,440.27</span>
+                <span class="up">+1.7%</span>
+              </li>
+              <li>
+                <img
+                  src="https://static.toss.im/icons/png/4x/icon-flag-kr.png"
+                  alt="국기"
+                />
+                <span class="label">코스닥</span>
+                <span class="value">697.64</span>
+                <span class="up">+1.6%</span>
+              </li>
+              <li>
+                <img
+                  src="https://static.toss.im/icons/png/4x/icon-flag-us.png"
+                  alt="미국 국기"
+                />
+                <span class="label">나스닥</span>
+                <span class="value">19,280.79</span>
+                <span class="down">-0.1%</span>
+              </li>
+              <li>
+                <img
+                  src="https://static.toss.im/icons/png/4x/icon-flag-us.png"
+                  alt="미국 국기"
+                />
+                <span class="label">S&P 500</span>
+                <span class="value">5,868.55</span>
+                <span class="down">-0.2%</span>
+              </li>
+              <li>
+                <img
+                  src="https://thumb.tossinvest.com/image/resized/32x0/https%3A%2F%2Fstatic.toss.im%2Ficons%2Fpng%2F4x%2Ficon-arrow-up-down.png"
+                  alt="VIX"
+                />
+                <span class="label">VIX</span>
+                <span class="value">17.93</span>
+                <span class="up">+3.3%</span>
+              </li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>
