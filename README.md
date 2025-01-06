@@ -1,8 +1,18 @@
 ## 💻 우리 투자 증권 UI 개선
 
-## Demo
+## 🎥 Demo
 
 https://github.com/user-attachments/assets/e0a20c45-e2c6-4b8d-a6d1-a27c637c8032
+
+## 👨🏻‍💻 Implement
+
+> **@keyframes 애니메이션 적용**
+
+<img width="513" alt="image" src="https://github.com/user-attachments/assets/d7e60970-4c62-4748-85f7-29a1aad8aefd" />
+
+> **SVG 태그를 활용한 그래프 구현**
+
+<img width="509" alt="image" src="https://github.com/user-attachments/assets/2405cfaa-7c6b-4213-99eb-ba0cb40552df" />
 
 ## 💁🏻 Team
 |                                                             **황유환**                                                              |                                                                  **조현식**                                                                  |                                                                       **황혜영**                                                                       |                                                                  **조윤주**                                                                  | 
@@ -12,7 +22,7 @@ https://github.com/user-attachments/assets/e0a20c45-e2c6-4b8d-a6d1-a27c637c8032
 
 ## 🏢 Convention
 
-### 💁🏻 Commit Example
+### 💁 Commit Example
 - `Feat: Add user authentication`
 - `Fix: Resolve null pointer exception`
 - `Docs: Update installation guide`
