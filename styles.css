@@ -1,0 +1,205 @@
+/* ==============================
+   fonts (글꼴)
+============================== */
+@import url("https://static.toss.im/tps/main.css");
+@import url("https://static.toss.im/tps/others.css");
+
+body {
+  font-family: "Toss Product Sans";
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f9;
+}
+
+h4 {
+  margin-top: 12px;
+}
+
+.iv-container {
+  padding-right: 380px;
+  max-width: 1200px;
+  /*margin: 20px auto;*/
+
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0iv-1);
+  padding-top: 60px;
+}
+
+.iv-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f6f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0iv-1);
+  margin-bottom: 20px;
+}
+
+.iv-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.iv-header-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2e3a59;
+  margin: 0;
+  padding-top: 16px;
+}
+
+.iv-flag-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background-color: #2e3a59;
+  border-radius: 12px;
+  margin-right: 16px;
+}
+
+.iv-flag-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.iv-header-info h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2e3a59;
+  margin: 0;
+}
+
+.iv-change {
+  font-size: 16px;
+  color: #888;
+  margin-top: 8px;
+}
+
+.iv-up {
+  color: #f04452;
+  padding-left: 8px;
+  font-weight: bold;
+}
+
+.iv-down {
+  color: #108ee9;
+  padding-left: 8px;
+  font-weight: bold;
+}
+
+.iv-main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.iv-chart-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.iv-chart-title {
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.iv-chart-period {
+  display: flex;
+  gap: 10px;
+}
+
+.iv-period-button {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2e3a59;
+  background: #f9fafc;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.iv-period-button:hover {
+  background: #eaeef2;
+}
+
+.iv-period-button.active {
+  background: #2e3a59;
+  color: #fff;
+  border: 1px solid #2e3a59;
+}
+
+.iv-chart-box {
+  background: #f9fafc;
+  padding: 20px 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0iv-1);
+  width: calc(100% - 360px);
+}
+
+.iv-chart-svg {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+.iv-y-axis text,
+.iv-x-axis text {
+  fill: #aaa;
+  font-size: 12px;
+}
+
+.iv-info-box section {
+  background: #f9fafc;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0iv-1);
+  margin-bottom: 20px;
+  width: 340px;
+}
+
+.iv-info-box h2 {
+  font-size: 18px;
+  color: #2e3a59;
+  margin-bottom: 10px;
+}
+
+.iv-info-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.iv-info-box li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.iv-indices li {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.iv-indices li img {
+  width: 16px;
+  height: 16px;
+}
+
+.iv-label {
+  text-align: left;
+}
+
+.iv-value {
+  text-align: right;
+}
