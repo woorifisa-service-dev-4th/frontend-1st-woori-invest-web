@@ -68,7 +68,7 @@ async function loadNews() {
   }
 }
 
-// 3. indices, news 실행
+// 3. 1, 2 실행
 document.addEventListener("DOMContentLoaded", () => {
   loadIndices();
   loadNews();

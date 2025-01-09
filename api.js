@@ -1,4 +1,4 @@
-// 1. 주가지수 api (indices)
+// 1. 주가지수 API (indices)
 export const getIndices = async () => {
   let indicesData;
   const url = "http://192.168.0.79:3000/indices";
@@ -16,7 +16,7 @@ export const getIndices = async () => {
   return indicesData;
 };
 
-// 2. 뉴스 api (news)
+// 2. 뉴스 API (news)
 export const getNews = async () => {
   let newsData;
   const url = "http://192.168.0.79:3000/news";
