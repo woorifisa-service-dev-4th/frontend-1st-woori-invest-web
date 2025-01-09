@@ -601,6 +601,10 @@ a {
   color: #f04452;
 }
 
+.hy-price-down {
+  color: #3182f6;
+}
+
 .hy-aside-left-heart {
   display: flex;
   flex-direction: column;
