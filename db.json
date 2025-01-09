@@ -1,0 +1,208 @@
+{
+  "indices": [
+    {
+      "name": "나스닥",
+      "value": 19489.68,
+      "change": -375.3,
+      "percentage": "-1.8%",
+      "flag": "🇺🇸"
+    },
+    {
+      "name": "S&P 500",
+      "value": 5909.03,
+      "change": -66.35,
+      "percentage": "-1.1%",
+      "flag": "🇺🇸"
+    },
+    {
+      "name": "VIX",
+      "value": 18.56,
+      "change": "+0.74",
+      "percentage": "+4.1%",
+      "flag": "🇺🇸"
+    },
+    {
+      "name": "코스피",
+      "value": 2521.05,
+      "change": "+28.95",
+      "percentage": "+1.1%",
+      "flag": "🇰🇷"
+    }
+  ],
+  "news": [
+    {
+      "title": "트럼프 관세 위험, 中·EU·멕시코·캐나다에 최대 영향",
+      "time": "1시간 전",
+      "source": "한국경제"
+    },
+    {
+      "title": "트럼프, 관세정책 시행 위해 경제 비상사태 선포할 수도... 美선물, 약세",
+      "time": "1시간 전",
+      "source": "이데일리"
+    },
+    {
+      "title": "“여기저기 콜록, 이 주식은 꿈틀”... 독감 확산에 일제히 올랐다는데",
+      "time": "3시간 전",
+      "source": "매일경제"
+    },
+    {
+      "title": "JP모간 헬스 콘퍼런스 앞두고 바이오주 기지개",
+      "time": "5시간 전",
+      "source": "한국경제"
+    }
+  ],
+  "chart": [
+    {
+      "rank": 1,
+      "name": "사나 바이오테크놀로지",
+      "currentPrice": "8,936원",
+      "change": "+6,535원",
+      "percentage": "272.1%",
+      "volume": "563,657주",
+      "transactionAmount": "52억원"
+    },
+    {
+      "rank": 2,
+      "name": "리케티 컴퓨팅",
+      "currentPrice": "19,735원",
+      "change": "-7,029원",
+      "percentage": "-26.2%",
+      "volume": "133,426주",
+      "transactionAmount": "26억원"
+    },
+    {
+      "rank": 3,
+      "name": "온다스 홀딩스",
+      "currentPrice": "4,031원",
+      "change": "+175원",
+      "percentage": "4.5%",
+      "volume": "548,827주",
+      "transactionAmount": "23억원"
+    },
+    {
+      "rank": 4,
+      "name": "압사이",
+      "currentPrice": "5,879원",
+      "change": "+1,411원",
+      "percentage": "31.5%",
+      "volume": "205,969주",
+      "transactionAmount": "12억원"
+    },
+    {
+      "rank": 5,
+      "name": "실SQ",
+      "currentPrice": "7,509원",
+      "change": "-2,897원",
+      "percentage": "-27.8%",
+      "volume": "143,822주",
+      "transactionAmount": "11억원"
+    },
+    {
+      "rank": 6,
+      "name": "아이온큐",
+      "currentPrice": "58,710원",
+      "change": "-13,463원",
+      "percentage": "-18.6%",
+      "volume": "12,550주",
+      "transactionAmount": "7.5억원"
+    },
+    {
+      "rank": 7,
+      "name": "버 바이오테크놀로지",
+      "currentPrice": "18,672원",
+      "change": "+7,189원",
+      "percentage": "62.6%",
+      "volume": "38,930주",
+      "transactionAmount": "7.1억원"
+    },
+    {
+      "rank": 8,
+      "name": "TSLL",
+      "currentPrice": "37,345원",
+      "change": "-408원",
+      "percentage": "-1.0%",
+      "volume": "18,852주",
+      "transactionAmount": "7.1억원"
+    },
+    {
+      "rank": 9,
+      "name": "애플레이드",
+      "currentPrice": "10,056원",
+      "change": "+5,181원",
+      "percentage": "106.2%",
+      "volume": "55,794주",
+      "transactionAmount": "5.6억원"
+    },
+    {
+      "rank": 10,
+      "name": "NVDL",
+      "currentPrice": "106,986원",
+      "change": "+2,620원",
+      "percentage": "2.5%",
+      "volume": "5,188주",
+      "transactionAmount": "5.6억원"
+    }
+  ],
+  "topStocks": [
+    {
+      "name": "사나 바이오테크놀로지",
+      "currentPrice": "9,052원",
+      "change": "+6,651원",
+      "percentage": "277.0%"
+    },
+    {
+      "name": "압사이",
+      "currentPrice": "5,879원",
+      "change": "+1,411원",
+      "percentage": "31.5%"
+    },
+    {
+      "name": "온다스 홀딩스",
+      "currentPrice": "4,133원",
+      "change": "+277원",
+      "percentage": "7.1%"
+    },
+    {
+      "name": "버 바이오테크놀로지",
+      "currentPrice": "19,123원",
+      "change": "+7,640원",
+      "percentage": "66.5%"
+    },
+    {
+      "name": "사일로 파마",
+      "currentPrice": "2,808원",
+      "change": "+1,222원",
+      "percentage": "77.0%"
+    },
+    {
+      "name": "엑스체인지 텍(ADR)",
+      "currentPrice": "2,037원",
+      "change": "+771원",
+      "percentage": "60.9%"
+    },
+    {
+      "name": "리케티 컴퓨팅",
+      "currentPrice": "19,720원",
+      "change": "-7,044원",
+      "percentage": "-26.3%"
+    },
+    {
+      "name": "애플레이드",
+      "currentPrice": "10,042원",
+      "change": "+5,167원",
+      "percentage": "105.9%"
+    },
+    {
+      "name": "실SQ",
+      "currentPrice": "7,451원",
+      "change": "-2,955원",
+      "percentage": "-28.3%"
+    },
+    {
+      "name": "아베 로보틱스",
+      "currentPrice": "5,588원",
+      "change": "+116원",
+      "percentage": "2.1%"
+    }
+  ]
+}
