@@ -17,57 +17,6 @@
   }
 }
 
-/* 차트 애니메이션 효과 (1급차 순위 변경)*/
-@keyframes slide-chart-up {
-  0% {
-    transform: translateY(0%);
-  }
-  50% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-
-/* 차트 애니메이션 효과(1급차 순위 변경) */
-@keyframes slide-chart-down {
-  0% {
-    transform: translateY(0%);
-  }
-  50% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-
-/* 차트 애니메이션 효과(2급차 순위 변경) */
-@keyframes slide-chart-double-up {
-  0% {
-    transform: translateY(0%);
-  }
-  50% {
-    transform: translateY(-200%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
-
-/* 차트 애니메이션 효과(2급차 순위 변경) */
-@keyframes slide-chart-double-down {
-  0% {
-    transform: translateY(0%);
-  }
-  50% {
-    transform: translateY(200%);
-  }
-  100% {
-    transform: translateY(0%);
-  }
-}
 
 /* 기본 설정 */
 body {
@@ -287,25 +236,23 @@ a {
 .chart-table tbody tr {
   background-color: #ffffff;
   border-radius: 30px;
-}
-.chart-rate-up {
-  animation: slide-chart-up 4s infinite ease-in-out;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.chart-rate-down {
-  animation: slide-chart-down 4s infinite ease-in-out;
-}
 
-.chart-rate-double-up {
-  animation: slide-chart-double-up 4s infinite ease-in-out;
-}
-
-.chart-rate-double-down {
-  animation: slide-chart-double-down 4s infinite ease-in-out;
-}
 
 .chart-table tbody tr:hover {
   background-color: #f5f7fa;
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .chart-table td {
