@@ -1,7 +1,6 @@
 const stockName = document.getElementsByClassName("hy-detail-content-name");
 const stockCurrentPrice = document.getElementsByClassName("hy-price-now");
 const stockChangePrice = document.getElementsByClassName("hy-price-change");
-const interest = document.getElementById("hy-interest");
 
 const topStock = new XMLHttpRequest();
 topStock.onload = () => {
@@ -27,8 +26,3 @@ const TOPSTOCK_URL = "http://192.168.0.79:3000/topStocks";
 
 topStock.open("GET", TOPSTOCK_URL);
 topStock.send();
-
-interest.addEventListener("click", () => {
-  console.log("click!!");
-  //   if()
-});
