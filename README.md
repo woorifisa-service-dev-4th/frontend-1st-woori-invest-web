@@ -4,8 +4,6 @@
 
 https://github.com/user-attachments/assets/e0a20c45-e2c6-4b8d-a6d1-a27c637c8032
 
-<img src="https://github.com/user-attachments/assets/a32e8f83-f738-4ee3-8d16-70fd39303ce4">
-
 
 ## 👨🏻‍💻 Implement
 
